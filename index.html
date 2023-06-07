@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Timezone Converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone-with-data.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="navigation">
+      <h1>Timezone Converter</h1>
+      <form onsubmit="convertTimezone(event)">
+        <label for="input-date">Enter date and time:</label>
+        <input type="datetime-local" id="input-date" required />
+        <label for="input-timezone">Your current timezone:</label>
+        <select id="input-timezone" required>
+          <option value="Asia/Bangkok">Asia/Bangkok</option>
+          <option value="America/Los_Angeles">America/Los_Angeles</option>
+          <option value="Europe/London">Europe/London</option>
+          <!-- Add more timezone options as needed -->
+        </select>
+        <label for="output-timezone">Select target timezone:</label>
+        <select id="output-timezone" required>
+          <option value="Asia/Bangkok">Asia/Bangkok</option>
+          <option value="America/Los_Angeles">America/Los_Angeles</option>
+          <option value="Europe/London">Europe/London</option>
+          <!-- Add more timezone options as needed -->
+        </select>
+        <button type="submit">Convert</button>
+      </form>
+    </div>
+    <div id="result"></div>
+  </body>
+</html>
