@@ -71,3 +71,7 @@ form button {
     width: 60%;
   }
 }
+
+#result {
+  margin-top: 150px;
+}
